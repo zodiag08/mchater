@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins","sans-serif";
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+header {
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(kwi7a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 5px;
+    margin: 0;
+}
+.list-header {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+    height: fit-content;
+    padding: 5px;
+    width: 100%;
+}
+header .logo {
+    color: #ea1f33;
+    font-size: 25px;
+    font-weight: bold;
+}
+header .logo span {
+    color: black;
+}
+.menu {
+    display: flex;
+    column-gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 300;
+    transition: 0.2s;
+}
+.menu li a:hover {
+    color: #ea1f33;
+}
+header button {
+    background-color: #ea1f33;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 25px;
+    height: fit-content;
+}
+
+/*featured categories*/
+
+
+.containerx {
+    display: flex;
+    width: 100%;
+
+}
+.card {
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 90%;
+    height: 60%;
+    display: block;
+    border-radius: 8px;
+}
+.card .info {
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+    color: white;
+}
+.card .info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.card .info p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card2 {
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 600px;
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+}
+
+.card2 img {
+    width: 120%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.card2 .info {
+    padding: 10px;
+}
+
+.card2 .info .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card2 .info .location {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+
+.card2 .info .favorite {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card2 .info .favorite button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+}
+
+.card2 .info .favorite button:hover {
+    color: red;
+}
+/*scrollbar css*/
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ea1f33;
+}
+
+
+
+
+
+
+/*popular links*/
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.column {
+    width: 20%;
+}
+.column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+.column ul li {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.show-all {
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/*footer*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+    margin-top: 5%;
+    height: 100%;
+}
+.footer-column {
+    margin-right: 20px;
+}
+.footer h2{
+    color: white;
+    margin-top: 14%;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+.settings select {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-80%);
+    text-decoration: none;
+    font-size: 10rem; /* Taille de la flèche augmentée */
+    color: grey;
+    animation: bounce 1s infinite;
+    transition: color 0.5s ease;
+  }
+  /* Animation pour l'effet de rebond */
+  @keyframes bounce-out {
+    0%, 20% {
+      transform: translateY(0); /* Position initiale */
+      opacity: 1; /* L'image est visible */
+    }
+    40% {
+      transform: translateY(20px); /* Effet de rebond léger */
+    }
+    100% {
+      transform: translateY(150vh); /* Descend hors de l'écran */
+      opacity: 0; /* Rend l'image invisible progressivement */
+    }
+  }
+  
+  .full-image {
+    width: 100%; /* S'assure que l'image occupe toute la largeur */
+    animation: bounce-out 3s forwards; /* Animation qui dure 3 secondes */
+  }
+.paragraphe{
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    b, strong { 
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+}
+.separator {
+    margin-top: 5%;
+    border-top: 3px solid #ccc; /* Light gray color for the line */
+    margin: 20px 0; /* Adds spacing above and below the line */
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+}
+.content2 {
+    max-width: 100%;
+    height: 100%;
+}
+.content2 h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.content2 p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+.listen-now {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 20%;
+}
+.listen-now:hover{
+    background-color: #333;
+}
+.host {
+    display: flex;
+    align-items: center;
+}
+.host img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.host-info {
+    text-align: left;
+}
+.host-info p {
+    margin: 0;
+    font-size: x-large;
+}
+.host-info h2 {
+    margin: 5px 0;
+    font-size: x-large;
+    color: #000;
+}
+
+
+
+.social-media {
+    margin-top: 12%;
+    background-color: #000;
+}
+.social-media a {
+    margin: 0 10px;
+}
+.social-media img {
+    width: 30px;
+    height: 30px;
+    gap: 10px;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+
